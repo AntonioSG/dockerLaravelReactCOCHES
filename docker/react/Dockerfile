@@ -5,7 +5,7 @@ RUN git clone https://github.com/AntonioSG/ReactCochesFront.git
 #RUN npm install -g vite
 WORKDIR /ReactCochesFront
 #COPY vite-project/package*.json ./
-COPY .env.example .env
+COPY .env .
 RUN npm install
 #COPY vite-project .
 RUN npm run build
