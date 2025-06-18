@@ -42,7 +42,7 @@ RUN git clone https://github.com/AntonioSG/LaravelCochesAPI.git
 WORKDIR /var/www/html/LaravelCochesAPI
 
 #El ficchero .env debería copiarse desde fuera del contenedor
-RUN cp .env.example .env
+RUN cp .env .
 RUN composer install
 RUN touch database/database.sqlite
 RUN php artisan migrate
